@@ -1,20 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <title>Daily Product Briefing</title>
+    <item><title>2025-06-10 Product Round-up</title><description>Welcome back to Tech News Today! Let’s dive into the latest buzz from Product Hunt, starting with **Notion TreeView**, a feature that introduces a sleek, visual tree structure to your Notion pages, enhancing organization and making navigation a breeze.
+
+Next up, we've got **Leather Mobile App**, designed for those looking to simplify their daily life by consolidating various tasks and notes in one elegant interface. It’s sophisticated, yet user-friendly!
+
+**Atlas** is here to help you manage your free time more effectively. By optimizing your schedule, it promises to give you more hours in the day for what really matters.
+
+Speaking of optimization, the **Foundation Models framework** is making waves in the AI community, offering developers tools to create and fine-tune cutting-edge models efficiently.
+
+On to **Spydr**, a tool that helps businesses track their online presence and performance. It’s a must-have for organizations aiming to boost their digital strategy!
+
+Next, there's **Magistral**, a platform that simplifies data management for developers, allowing seamless integration and boosting productivity on projects.
+
+For language enthusiasts, **Merlio** offers an innovative way to learn languages through immersive content and interactive features.
+
+If you’re looking to enhance your productivity, **Chunk** allows you to break down complex tasks into manageable pieces, making work less daunting.
+
+In the realm of virtual networking, **Virtuall.PRO** provides a platform to connect and collaborate with like-minded professionals across the globe.
+
+Creators and marketers will love **FunnelYT**, which analyzes YouTube channels to enhance engagement and subscriber growth.
+
+Last but not least, **Astra from Topaz Labs** is revolutionizing image enhancement, offering AI-driven tools to elevate your photography.
+
+And finally, **Bridgely** promises to streamline how we connect across social networks, making engagement more meaningful.
+
+That’s a wrap on our Product Hunt picks! Stay tuned for more tech trends!</description><pubDate>Wed, 11 Jun 2025 16:18:49 +0000</pubDate><enclosure url="https://USERNAME.github.io/my-daily-podcast/episodes/2025-06-10.mp3" length="2511360" type="audio/mpeg" /><guid isPermaLink="false">pod-2025-06-10</guid></item><title>Daily Product Briefing</title>
     <link>https://USERNAME.github.io/my-daily-podcast</link>
     <description>60-second recap of product-management news.</description>
-    <itunes:author>You</itunes:author>
-    <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="https://USERNAME.github.io/my-daily-podcast/cover.jpg"/>
+    <ns0:author>You</ns0:author>
+    <ns0:explicit>no</ns0:explicit>
+    <ns0:image href="https://USERNAME.github.io/my-daily-podcast/cover.jpg" />
     <item>
       <title>Trailer</title>
       <description>A quick hello.</description>
       <pubDate>Tue, 10 Jun 2025 07:00:00 +0000</pubDate>
-      <enclosure url="https://USERNAME.github.io/my-daily-podcast/trailer.mp3"
-                 length="345678"
-                 type="audio/mpeg"/>
+      <enclosure url="https://USERNAME.github.io/my-daily-podcast/trailer.mp3" length="345678" type="audio/mpeg" />
       <guid isPermaLink="false">trailer-2025-06-10</guid>
     </item>
   </channel>
