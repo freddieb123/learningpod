@@ -20,11 +20,11 @@ jobs:
     - name: Install deps
       run: pip install openai feedparser python-dateutil lxml requests
 
-- name: 🔍 check key length
-  env:
-    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-  run: |
-    echo "KEYLEN=${#OPENAI_API_KEY}"
+    - name: 🔍 check key length
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        echo "KEYLEN=${#OPENAI_API_KEY}
 
 
     - name: Generate episode
