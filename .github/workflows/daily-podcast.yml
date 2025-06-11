@@ -1,5 +1,6 @@
 name: Daily podcast
 
+
 on:
   schedule:
     # 06:00 UTC = 07:00 BST (London summer time)
@@ -18,7 +19,9 @@ jobs:
         python-version: "3.12"
 
     - name: Install deps
-      run: pip install openai feedparser python-dateutil lxml requests
+      run: |
+       pip install openai feedparser python-dateutil lxml requests
+       pip install "openai>=1.25.0" feedparser python-dateutil lxml requests
 
     - name: 🔍 check key length
       env:
