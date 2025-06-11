@@ -24,7 +24,7 @@ jobs:
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: |
-        echo "KEYLEN=${#OPENAI_API_KEY}
+        echo "KEYLEN=${#OPENAI_API_KEY}"
 
 
     - name: Generate episode
