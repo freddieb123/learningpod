@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Daily Product Briefing</title>
+    <link>https://USERNAME.github.io/my-daily-podcast</link>
+    <description>60-second recap of product-management news.</description>
+    <itunes:author>You</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="https://USERNAME.github.io/my-daily-podcast/cover.jpg"/>
+    <item>
+      <title>Trailer</title>
+      <description>A quick hello.</description>
+      <pubDate>Tue, 10 Jun 2025 07:00:00 +0000</pubDate>
+      <enclosure url="https://USERNAME.github.io/my-daily-podcast/trailer.mp3"
+                 length="345678"
+                 type="audio/mpeg"/>
+      <guid isPermaLink="false">trailer-2025-06-10</guid>
+    </item>
+  </channel>
+</rss>
