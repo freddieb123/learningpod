@@ -31,9 +31,9 @@ audio = client.audio.speech.create(
     response_format="mp3"
 )
 fname = f"{yesterday}.mp3"
-with open(f"{EP_DIR}/{fname}", "wb") as f:
-    f.write(audio.audio)
-length_bytes = os.path.getsize(f"{EP_DIR}/{fname}")
+path = f"{EP_DIR}/{fname}"
+audio.stream_to_file(path)            # <— one-liner helper
+length_bytes = os.path.getsize(path)
 
 # --- 4. Prepend a new <item> to feed.xml ---
 tree = ET.parse(FEED)
