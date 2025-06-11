@@ -1,4 +1,6 @@
 name: Daily podcast
+permissions:
+  contents: write
 
 
 on:
