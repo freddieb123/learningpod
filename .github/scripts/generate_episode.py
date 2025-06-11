@@ -28,7 +28,7 @@ audio = client.audio.speech.create(
     model="tts-1-hd",
     input=script,
     voice="alloy",
-    format="mp3"
+    response_format="mp3"
 )
 fname = f"{yesterday}.mp3"
 with open(f"{EP_DIR}/{fname}", "wb") as f:
