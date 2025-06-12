@@ -56,9 +56,9 @@ And finally, **Bridgely** promises to streamline how we connect across social ne
 That’s a wrap on our Product Hunt picks! Stay tuned for more tech trends!</description><pubDate>Wed, 11 Jun 2025 16:18:49 +0000</pubDate><enclosure url="https://USERNAME.github.io/my-daily-podcast/episodes/2025-06-10.mp3" length="2511360" type="audio/mpeg" /><guid isPermaLink="false">pod-2025-06-10</guid></item><title>Daily Product Briefing</title>
     <link>https://USERNAME.github.io/my-daily-podcast</link>
     <description>60-second recap of product-management news.</description>
-    <ns0:author>You</ns0:author>
-    <ns0:explicit>no</ns0:explicit>
-    <ns0:image href="https://USERNAME.github.io/my-daily-podcast/cover.jpg" />
+    <itunes:author>You</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="https://USERNAME.github.io/my-daily-podcast/cover.jpg" />
     <item>
       <title>Trailer</title>
       <description>A quick hello.</description>
