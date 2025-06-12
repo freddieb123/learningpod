@@ -81,18 +81,19 @@ research_notes = client.chat.completions.create(
 # --------------------------------------------------------------------
 # 3️⃣   Turn the research notes into a ~3-minute podcast script
 # --------------------------------------------------------------------
-script_sys = (
-    "You are a narrative podcast scriptwriter. Using the research notes below, "
-    "craft a 3-minute (≈ 1000-word) monologue in an engaging radio-host tone. "
-    "Open with a hook, explain the trend, weave in the data points conversationally "
-    "and close with an upbeat takeaway. Do NOT include the citations verbatim."
-)
-podcast_script = client.chat.completions.create(
+script = client.chat.completions.create(
     model=MODEL_CHAT,
     messages=[
-        {"role": "system", "content": script_sys},
-        {"role": "user",   "content": research_notes}
-    ]
+        {
+            "role": "system",
+            "content": (
+                "You are a narrative podcast writer. Turn the research notes into a "
+                "3-minute (~350-word) monologue. Keep it engaging and conversational. "
+                "Do NOT include the raw citations."
+            ),
+        },
+        {"role": "user", "content": research_notes},
+    ],
 ).choices[0].message.content.strip()
 
 # --------------------------------------------------------------------
