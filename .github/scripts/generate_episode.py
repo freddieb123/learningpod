@@ -66,7 +66,7 @@ prompt_topic = client.chat.completions.create(
 # --------------------------------------------------------------------
 research_sys = (
     "You are a deep-research assistant. Using credible, up-to-date sources, "
-    "write detailed notes (~2000 words) on the prompt below. "
+    "write detailed notes (~700 words) on the prompt below. "
     "Include 3–5 key data points or citations (title + publication / yyyy) "
     "and a brief ‘why it matters to product leaders’ section."
 )
@@ -83,7 +83,7 @@ research_notes = client.chat.completions.create(
 # --------------------------------------------------------------------
 script_sys = (
     "You are a narrative podcast scriptwriter. Using the research notes below, "
-    "craft a 3-minute (≈ 1500-word) monologue in an engaging radio-host tone. "
+    "craft a 3-minute (≈ 700-word) monologue in an engaging radio-host tone. "
     "Open with a hook, explain the trend, weave in the data points conversationally "
     "and close with an upbeat takeaway. Do NOT include the citations verbatim."
 )
