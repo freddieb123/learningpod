@@ -48,7 +48,7 @@ client = OpenAI()
 prompt_gen_sys = (
     "You are a creative editor for a daily tech-trends podcast. "
     "Invent a single compelling research prompt that asks for deep, data-backed insights "
-    "into a long-term trend in technology, product management, or society. "
+    "into a long-term trend in society. This could be something like the surveillance state or the rising cost of caring for the elderly or the falling birth rate or anything like that."
     "Keep it ≤ 50 words, end with a question mark."
 )
 prompt_topic = client.chat.completions.create(
@@ -66,7 +66,7 @@ prompt_topic = client.chat.completions.create(
 # --------------------------------------------------------------------
 research_sys = (
     "You are a deep-research assistant. Using credible, up-to-date sources, "
-    "write detailed notes (~1000 words) on the prompt below. "
+    "write detailed notes (~2000 words) on the prompt below. "
     "Include 3–5 key data points or citations (title + publication / yyyy) "
     "and a brief ‘why it matters to product leaders’ section."
 )
@@ -88,7 +88,7 @@ script = client.chat.completions.create(
             "role": "system",
             "content": (
                 "You are a narrative podcast writer. Turn the research notes into a "
-                "3-minute (~350-word) monologue. Keep it engaging and conversational. "
+                "10-minute (~2000-word) monologue. Keep it engaging and conversational. "
                 "Do NOT include the raw citations."
             ),
         },
