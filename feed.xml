@@ -1,7 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <itunes:owner>
+    <item><title>2025-06-11 Product Round-up</title><description>Welcome back to the tech-news roundup! Today, we have a lineup of innovative tools making waves in the digital realm.
+
+First up is the **Lasso Alarm Clock**, a smart device designed to help you rise and shine without the usual grumpiness. Its unique lasso feature gets you out of bed for real, turning off that snooze option!
+
+Next, say hello to **UntitledPen**, the digital note-taking app that focuses on minimalism. It strips away distractions, allowing you to write freely without interruptions.
+
+For those looking to enhance their communication, check out **Async Voice AI**. This service converts your text into natural-sounding voice messages, perfect for businesses looking to add a personal touch to customer communication.
+
+Need content? The **AI Template Generator** has got you covered! It creates customizable templates to streamline your project workflow, saving you time and energy.
+
+Fitness enthusiasts, don’t miss **Viberunner**! This smart app monitors your running activities, providing insights and tracking your performance, all while motivating you to push your limits.
+
+In the realm of app development, **AppReply MAX** offers a powerful toolkit, enhancing app responses and user engagement seamlessly.
+
+For marketers, the **Ad Compliance Checker by Hawky.ai** ensures your ads meet regulatory standards, preventing costly fines.
+
+**Hugging Face AISheets** brings AI into your spreadsheets, enabling intelligent data analysis and automation for smarter decision-making.
+
+Looking to enjoy the summer? **Summer** is a planning app that helps you organize those sunny outings effortlessly.
+
+Finally, we have **Scripe 2.0**, a revamped text editor that enhances readability and collaboration, and the **Dia Browser**, a simple yet effective tool for efficient web browsing. Last but not least, **Ente Photos** helps you curate and enhance your photos with AI-driven editing features.
+
+That’s your tech spotlight for today! Keep tuning in for more updates!</description><pubDate>Thu, 12 Jun 2025 10:16:55 +0000</pubDate><enclosure url="https://USERNAME.github.io/my-daily-podcast/episodes/2025-06-11.mp3" length="2426880" type="audio/mpeg" /><guid isPermaLink="false">pod-2025-06-11</guid></item><itunes:owner>
     <itunes:name>Fred Burgess</itunes:name>
     <itunes:email>freddieburgess@gmail.com</itunes:email>
     </itunes:owner>
