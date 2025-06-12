@@ -24,6 +24,11 @@ jobs:
       run: |
        pip install openai feedparser python-dateutil lxml requests
        pip install "openai>=1.25.0" feedparser python-dateutil lxml requests
+       pip install pydub
+
+    - name: Install ffmpeg
+      run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
 
     - name: 🔍 check key length
       env:
