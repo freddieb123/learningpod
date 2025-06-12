@@ -148,7 +148,7 @@ channel = tree.getroot().find("channel")
 
 item = ET.Element("item")
 ET.SubElement(item, "title").text       = f"{yesterday} — {prompt_topic}"
-ET.SubElement(item, "description").text = podcast_script
+ET.SubElement(item, "description").text = script
 ET.SubElement(item, "pubDate").text     = pub_date
 ET.SubElement(item, "enclosure",
               url=f"{BASE_URL}/episodes/{fname}",
