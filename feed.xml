@@ -58,5 +58,13 @@ That’s a wrap on our Product Hunt picks! Stay tuned for more tech trends!</des
       <enclosure url="https://USERNAME.github.io/my-daily-podcast/trailer.mp3" length="345678" type="audio/mpeg" />
       <guid isPermaLink="false">trailer-2025-06-10</guid>
     </item>
+    
+    <itunes:owner>
+    <itunes:name>Fred Burgess</itunes:name>
+    <itunes:email>freddieburgess@gmail.com</itunes:email>
+    </itunes:owner>
+
+    <itunes:author>Fred Burgess</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
   </channel>
 </rss>
