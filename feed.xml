@@ -1,7 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <item><title>2025-06-10 Product Round-up</title><description>Welcome back to Tech News Today! Let’s dive into the latest buzz from Product Hunt, starting with **Notion TreeView**, a feature that introduces a sleek, visual tree structure to your Notion pages, enhancing organization and making navigation a breeze.
+    <item><title>2025-06-11 Product Round-up</title><description>Welcome back to your tech news update! We've got some exciting new tools making waves this week, so let's dive right in.
+
+First up is **Undash**, a sleek tool designed to streamline your workflow by allowing you to consolidate messages and tasks, ensuring you're always on top of your to-do list without the clutter.
+
+Next, **Astra from Topaz Labs** is turning heads in the world of image editing with its cutting-edge AI technology. It enhances photos effortlessly while preserving their natural look—perfect for photographers and content creators alike!
+
+Then there's **FunnelYT**, a game-changer for YouTube marketers. With its smarter analytics, you can optimize your marketing funnel and drive more engagement, making it easier to convert views into subscribers.
+
+**Atlas** brings a fresh approach to project management by offering a dynamic hub where teams can collaborate seamlessly, boosting productivity with real-time updates and resource sharing.
+
+On the productivity front, **Chunk** introduces a powerful writing assistant to help writers and professionals generate quality content more effectively, enhancing creativity on the go.
+
+For developers, the **Foundation Models framework** offers a comprehensive toolkit to easily build and deploy robust AI models, making cutting-edge technology accessible for all.
+
+If you’re feeling nostalgic, check out **RetroTerminal**, which revives the classic command-line interface experience, for those who miss the days of simple yet powerful computing.
+
+**Spydr** enters the fray as a privacy-focused technical tool, helping users manage their online presence efficiently.
+
+Lastly, **Merlio**, **Bridgely**, and **Kodosumi** are all rolling out innovative solutions for communication, project management, and data organization, ensuring you have plenty of options to enhance your digital life.
+
+That’s your tech update for today! Stay tuned for more innovative tools to make your life easier!</description><pubDate>Thu, 12 Jun 2025 06:21:05 +0000</pubDate><enclosure url="https://USERNAME.github.io/my-daily-podcast/episodes/2025-06-11.mp3" length="2396160" type="audio/mpeg" /><guid isPermaLink="false">pod-2025-06-11</guid></item><item><title>2025-06-10 Product Round-up</title><description>Welcome back to Tech News Today! Let’s dive into the latest buzz from Product Hunt, starting with **Notion TreeView**, a feature that introduces a sleek, visual tree structure to your Notion pages, enhancing organization and making navigation a breeze.
 
 Next up, we've got **Leather Mobile App**, designed for those looking to simplify their daily life by consolidating various tasks and notes in one elegant interface. It’s sophisticated, yet user-friendly!
 
