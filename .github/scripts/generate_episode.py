@@ -5,6 +5,8 @@ ET.register_namespace("itunes", "http://www.itunes.com/dtds/podcast-1.0.dtd")
 from openai import OpenAI
 from dateutil import tz
 
+BASE_URL = "https://freddieb123.github.io/learningpod"   # or your custom domain
+
 ROOT = os.getenv("GITHUB_WORKSPACE", ".")
 FEED = f"{ROOT}/feed.xml"
 EP_DIR = f"{ROOT}/episodes"
@@ -45,7 +47,7 @@ ET.SubElement(item, "title").text       = f"{yesterday} Product Round-up"
 ET.SubElement(item, "description").text = script
 ET.SubElement(item, "pubDate").text     = datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
 ET.SubElement(item, "enclosure",
-              url=f"https://USERNAME.github.io/my-daily-podcast/episodes/{fname}",
+              url=f"{BASE_URL}/episodes/{fname}",
               length=str(length_bytes),
               type="audio/mpeg")
 guid = ET.SubElement(item, "guid", isPermaLink="false")
