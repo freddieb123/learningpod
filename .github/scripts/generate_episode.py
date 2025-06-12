@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import os, datetime, feedparser, xml.etree.ElementTree as ET, requests
+ET.register_namespace("itunes", "http://www.itunes.com/dtds/podcast-1.0.dtd")
+
 from openai import OpenAI
 from dateutil import tz
 
