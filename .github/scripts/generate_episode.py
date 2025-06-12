@@ -66,7 +66,7 @@ prompt_topic = client.chat.completions.create(
 # --------------------------------------------------------------------
 research_sys = (
     "You are a deep-research assistant. Using credible, up-to-date sources, "
-    "write detailed notes (~350 words) on the prompt below. "
+    "write detailed notes (~1000 words) on the prompt below. "
     "Include 3–5 key data points or citations (title + publication / yyyy) "
     "and a brief ‘why it matters to product leaders’ section."
 )
@@ -83,7 +83,7 @@ research_notes = client.chat.completions.create(
 # --------------------------------------------------------------------
 script_sys = (
     "You are a narrative podcast scriptwriter. Using the research notes below, "
-    "craft a 3-minute (≈ 350-word) monologue in an engaging radio-host tone. "
+    "craft a 3-minute (≈ 1000-word) monologue in an engaging radio-host tone. "
     "Open with a hook, explain the trend, weave in the data points conversationally "
     "and close with an upbeat takeaway. Do NOT include the citations verbatim."
 )
@@ -98,17 +98,46 @@ podcast_script = client.chat.completions.create(
 # --------------------------------------------------------------------
 # 4️⃣   TTS → MP3
 # --------------------------------------------------------------------
+from pydub import AudioSegment
+
+VOICE = "alloy"
+MAX_LEN = 4000  # safety buffer below the 4096-char limit
+
+# --- Split script ---
+def split_text(text, maxlen=MAX_LEN):
+    paras = text.split("\n\n")
+    chunks, current = [], ""
+    for para in paras:
+        if len(current) + len(para) < maxlen:
+            current += para + "\n\n"
+        else:
+            chunks.append(current.strip())
+            current = para + "\n\n"
+    if current: chunks.append(current.strip())
+    return chunks
+
+parts = split_text(script)
+
+# --- Generate audio chunks ---
+full_audio = AudioSegment.silent(0)
+
+for i, part in enumerate(parts):
+    audio = client.audio.speech.create(
+        model="tts-1-hd",
+        input=part,
+        voice=VOICE,
+        response_format="mp3"
+    )
+    temp_file = f"/tmp/chunk_{i}.mp3"
+    audio.stream_to_file(temp_file)
+    full_audio += AudioSegment.from_file(temp_file) + AudioSegment.silent(200)
+
+# --- Save final mp3 ---
 fname = f"{yesterday}.mp3"
 path  = f"{EP_DIR}/{fname}"
-
-audio = client.audio.speech.create(
-    model=MODEL_TTS,
-    input=podcast_script,
-    voice=VOICE,
-    response_format="mp3"
-)
-audio.stream_to_file(path)
+full_audio.export(path, format="mp3")
 length_bytes = os.path.getsize(path)
+
 
 # --------------------------------------------------------------------
 # 5️⃣   Update feed.xml (prepend new <item>)
