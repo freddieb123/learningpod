@@ -140,6 +140,8 @@ FEED   = f"{ROOT}/feed.xml"
 EP_DIR = f"{ROOT}/episodes"
 os.makedirs(EP_DIR, exist_ok=True)
 
+USED_PATH = f"{ROOT}/.used_topics.json"  
+
 # --- date helpers ---
 now_uk     = datetime.datetime.now(tz.gettz("Europe/London"))
 yesterday  = (now_uk - datetime.timedelta(days=1)).date()          # for filenames & titles
