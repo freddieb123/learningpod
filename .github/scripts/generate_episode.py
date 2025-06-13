@@ -130,7 +130,6 @@ TOPICS = [
     "Digital legacy and post-mortem avatars",
 ]
 
-USED_PATH = f"{ROOT}/.used_topics.json"      # hidden file committed to the repo
 # ----------------------------------
 
 
