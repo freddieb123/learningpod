@@ -26,6 +26,22 @@ MODEL_CHAT = "gpt-4o-mini"  # or gpt-4o / gpt-4o-turbo if you prefer
 MODEL_TTS  = "tts-1-hd"
 # -----------------------------
 
+# ---------- topic bank ----------
+TOPICS = [
+    "Nietzsche’s “God is dead” and secular ethics in 2025",
+    "The Will-to-Power vs. personal-branding culture",
+    "Stoicism as an antidote to climate anxiety",
+    "Camus’ Absurdism in the post-truth era",
+    "Confucian revival in AI-shaped East Asia",
+    "Buddhist non-self and digital avatars",
+    "Feminist epistemology & algorithmic bias",
+    # … keep the list exactly as you pasted it …
+    "Digital legacy and post-mortem avatars",
+]
+USED_PATH = f"{ROOT}/.used_topics.json"      # hidden file committed to the repo
+# ----------------------------------
+
+
 # --- repo paths inside the CI runner ---
 ROOT   = os.getenv("GITHUB_WORKSPACE", ".")
 FEED   = f"{ROOT}/feed.xml"
@@ -42,22 +58,28 @@ ET.register_namespace("itunes", "http://www.itunes.com/dtds/podcast-1.0.dtd")
 
 client = OpenAI()
 
+import random, json, itertools
+
 # --------------------------------------------------------------------
-# 1️⃣   Generate a *research prompt* describing an interesting trend
+# 1️⃣   Pick a fresh topic (random, no repeats)
 # --------------------------------------------------------------------
-prompt_gen_sys = (
-    "You are a creative editor for a daily tech-trends podcast. "
-    "Invent a single compelling research prompt that asks for deep, data-backed insights "
-    "into a long-term trend in society. This could be something like the surveillance state or the rising cost of caring for the elderly or the falling birth rate or anything like that."
-    "Keep it ≤ 50 words, end with a question mark."
-)
-prompt_topic = client.chat.completions.create(
-    model=MODEL_CHAT,
-    messages=[
-        {"role": "system", "content": prompt_gen_sys},
-        {"role": "user",   "content": "Give me today’s prompt."}
-    ]
-).choices[0].message.content.strip()
+try:
+    with open(USED_PATH) as fh:
+        used = set(json.load(fh))
+except (FileNotFoundError, json.JSONDecodeError):
+    used = set()
+
+available = [i for i in range(len(TOPICS)) if i not in used]
+if not available:
+    raise SystemExit("🎉  All 100 topics are done. Add more before tomorrow’s run!")
+
+idx           = random.choice(available)
+prompt_topic  = TOPICS[idx]                     # this replaces the GPT-invented prompt
+used.add(idx)                                  # persist the choice
+
+with open(USED_PATH, "w") as fh:
+    json.dump(sorted(used), fh, indent=2)
+
 
 # --------------------------------------------------------------------
 # 2️⃣   Perform *deep research* on that topic
@@ -66,9 +88,8 @@ prompt_topic = client.chat.completions.create(
 # --------------------------------------------------------------------
 research_sys = (
     "You are a deep-research assistant. Using credible, up-to-date sources, "
-    "write detailed notes (~2000 words) on the prompt below. "
-    "Include 3–5 key data points or citations (title + publication / yyyy) "
-    "and a brief ‘why it matters to product leaders’ section."
+    "write detailed notes (~2000 words) on the topic below. "
+    "Include 3–5 key data points or citations (title + publication / yyyy). And make sure it's relevant to day to day life today. It should be a briefing that helps foundational understanding to prepare the listener for a debate they're about to have in that area."
 )
 research_notes = client.chat.completions.create(
     model=MODEL_CHAT,
