@@ -1,7 +1,47 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <item><title>2025-07-13 — Open-source “agentic” AI models</title><description>[Intro Music Fades]
+    <item><title>2025-07-14 — Bias in generative models &amp; fairness metrics</title><description>**Title: Understanding Bias and Fairness in Generative AI**
+
+Hey there, welcome back to the show! Today, we’re diving into an increasingly pressing issue in our digital world—bias in artificial intelligence, specifically in generative models. As AI continues to weave its way into countless aspects of our lives—from the social media algorithms that dictate what we see, to the job recruitment tools that might filter out qualified candidates based on skewed data—understanding how biases manifest in these systems is more crucial than ever.
+
+So, let’s start with the basics. What are generative models? In simple terms, these are AI systems designed to create new content by learning from existing data. There’s a variety of models out there—think Generative Adversarial Networks, or GANs, where two neural networks spar with each other to produce incredibly lifelike images or sound. Then we have the ever-popular Transformers, like GPT-3, which generate human-like text based on prompts we give them. It’s both a marvel of technology and a complex web of implications, especially when it comes to fairness.
+
+Now, there’s a little detail that often gets overlooked: bias. You see, bias can creep into generative models in several ways. Let’s break it down:
+
+First up is **data bias**. This arises from the training datasets themselves. If a dataset has ingrained stereotypes or leaves out certain groups, guess what? The model is likely to reflect those shortcomings in its outputs. For instance, a model trained on data that predominantly features male professionals might struggle to accurately represent women or non-binary individuals.
+
+Next, we have **algorithmic bias**. This is a bit trickier—it refers to how the design and training methods of the model may inherently favor certain interpretations of data. This means, even if you have a well-rounded dataset, the way the model processes that data can skew the outcomes.
+
+And let’s not forget about **evaluation bias**. Sometimes, the very metrics we use to assess how well a model performs can create blind spots. For example, if these performance metrics favor a particular demographic or perspective, they can mask the broader issues of fairness in a model’s outputs.
+
+Now, why does this matter? The repercussions of biased AI systems can be staggering. Take job recruitment algorithms. If a company relies on an AI tool to filter resumes, a poorly designed model might disproportionately reject qualified candidates from underrepresented backgrounds. According to recent findings, this technology has resulted in nearly 40% lower job interview rates for women. Yikes, right?
+
+Moving into the realm of law enforcement, we see similar patterns. Predictive policing tools, often trained on historical crime data, can unfairly target marginalized communities. This perpetuates existing inequalities and opens up a can of worms regarding systemic injustice. If we’re not vigilant, generative models can unwittingly reinforce harmful stereotypes in the content they produce, whether that’s art, journalism, or even the quirky dialogues in your favorite AI chatbots.
+
+So, how do we tackle these biases? For starters, researchers have developed various **fairness metrics** aimed at quantifying fairness and providing frameworks for addressing these biases. The first is **demographic parity**, which checks if outcomes are independent of sensitive attributes like gender or race. Ideally, if 50% of the population is female, 50% of selected candidates should also be female.
+
+Next on the list is **equal opportunity**. This one looks at whether different groups have an equal chance of receiving positive outcomes, focusing on the true positive rates across those groups. 
+
+Then there’s **calibration**, which ensures that the model’s predicted probabilities match empirical outcomes. If a model predicts a 70% chance of something happening, it should be right that 70% of the time—across all demographic groups.
+
+And finally, we have a more nuanced approach called **fairness through awareness**. This means we must consider the social context of decisions made by AI and integrate a more comprehensive understanding of ethics into our evaluations of models.
+
+However, let’s pause for a moment because, while these metrics can be helpful, they aren’t without limitations. For example, focusing too much on one metric could lead to unintended consequences. You might achieve demographic parity but at the expense of accuracy for specific groups.
+
+Also, here's another conundrum: different fairness metrics can sometimes conflict with one another. Striving for equal opportunity might hurt demographic parity, creating a real balancing act for practitioners in the field.
+
+It’s important to recognize the critical role of context in all of this. What might be perceived as biased or unfair in one cultural framework may not hold the same significance in another. So, when developing generative models, a global perspective is essential. We need to factor in cultural sensitivities and historical contexts, especially involving past injustices, to create ethical AI applications.
+
+Research is actively underway to combat bias and improve fairness metrics. Initiatives like **bias audits** are becoming increasingly prevalent, allowing organizations to scrutinize their AI systems systematically. There’s a growing recognition of the need for **diverse datasets** to train models accurately, ensuring broader representation.
+
+Post-production adjustments, or **post-hoc mitigation techniques**, are also gaining traction. These allow developers to change outputs based on fairness constraints, ensuring that models can be tweaked after training to enhance fairness. Plus, promoting **transparency** and **explainability** in AI systems helps users understand how models arrive at decisions, which can foster trust and accountability.
+
+But we need to remember that while we pursue fairness, ongoing discussions about ethical AI are necessary. The landscape of technology is constantly shifting, and as newer algorithms and models emerge, adaptability in metrics and frameworks for bias assessments must keep pace with these changes. 
+
+To wrap up, bias in generative models and the fairness metrics assessing them deeply influences everyday life. We can’t afford to ignore the potential for bias to trickle into AI systems, shaping outcomes in ways we might not even recognize. Engaging in dialogues around these issues is vital. As we look towards a future where AI technologies are integrated into our society, it’s crucial that they are aligned with our shared values of equity and justice.
+
+Thank you for joining me on this exploration of bias in generative AI. Remember, understanding the mechanisms behind these technologies equips us to engage effectively in conversations about their future and the ethical implications that come with them. Until next time!</description><pubDate>Tue, 15 Jul 2025 07:23:38 +0000</pubDate><enclosure url="https://freddieb123.github.io/learningpod/episodes/2025-07-14.mp3" length="1721133" type="audio/mpeg" /><guid isPermaLink="false">pod-2025-07-14</guid></item><item><title>2025-07-13 — Open-source “agentic” AI models</title><description>[Intro Music Fades]
 
 Welcome back, listeners! Today, we’re diving into the intriguing world of open-source agentic AI models—a topic that’s kind of buzzing right now in the tech community. It’s a fascinating blend of autonomy, decision-making, and the incredible potential of collaboration. So, let’s break it down and see just what makes these models tick.
 
