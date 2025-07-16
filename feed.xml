@@ -1,7 +1,41 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <item><title>2025-07-14 — Bias in generative models &amp; fairness metrics</title><description>**Title: Understanding Bias and Fairness in Generative AI**
+    <item><title>2025-07-15 — Carbon-negative concrete</title><description>Let’s talk about concrete. Yes, you heard me right—concrete! You might not think much about it when you walk past a construction site or see a sidewalk, but this humble material plays a colossal role in our built environment. In fact, concrete is the most widely used construction material in the world. Unfortunately, it's also one of the biggest culprits when it comes to greenhouse gas emissions. If you can believe it, around 8% of the world’s emissions come from the production of traditional concrete alone. That’s a staggering figure, isn’t it?
+
+The main offender here is Portland cement, the primary ingredient in concrete, produced through a process called calcination, which releases a significant amount of CO₂ into the atmosphere. Given the escalating urgency to combat climate change, there is a growing call to arms for the construction industry to innovate and adapt. Enter carbon-negative concrete—a groundbreaking development that seeks to not just minimize emissions, but actually sequester more carbon dioxide than it emits during its lifecycle. 
+
+So, what exactly is carbon-negative concrete? Simply put, it’s a type of concrete that actively locks away more carbon dioxide from the environment than is released during its production and use. How do we do this? There are a few innovative methods at play here. 
+
+First, we have carbon capture technologies, which are pretty fascinating. These technologies capture the CO₂ emissions produced during the cement-making process and cleverly incorporate them back into the concrete. Imagine taking that harmful gas and turning it into a building block for our infrastructure! It’s a brilliant twist on recycling. 
+
+Then, there are alternative materials. Instead of just relying on traditional Portland cement, industries are now mixing in materials like fly ash, slag, and limestone calcined clay cement. Not only do these materials require less energy to produce, but they also act as carbon sinks, absorbing carbon from the environment over time. 
+
+And let’s not overlook the power of nature itself with biogenic processes. By using bio-based materials, such as certain types of algae or bacteria, we can enhance the concrete's ability to store carbon. As these organisms grow, they absorb CO₂, offsetting some of the emissions generated in concrete's lifecycle. It’s a beautiful blend of technology and nature working together to tackle a pressing global issue.
+
+As our planet grapples with the escalating impacts of climate change, the push for sustainable alternatives in construction has never been more urgent. The stakes are high, and the construction industry is facing increasing regulations and market pressures to reduce its carbon footprint. If carbon-negative concrete can become commonplace, we could meet global climate goals, bolster our infrastructure’s resilience against climate-related disasters, and inspire a wave of innovation that transitions us toward a circular economy in construction.
+
+Let’s look at some fascinating data and trends. The International Energy Agency reported that the cement industry alone was responsible for a staggering 2.2 billion tons of CO₂ emissions annually back in 2021. However, there's remarkable potential in carbon capture measures. Some studies suggest that integrating carbon capture and storage technologies into cement production could reduce emissions by up to 75%. Imagine the impact if we could sequester hundreds of grams of CO₂ for every kilogram of cement we produce!
+
+Additionally, substituting even just 30% of Portland cement with alternative materials like fly ash can result in greenhouse gas emissions reductions of up to 32%. That’s no small feat! Just last year, researchers at the University of Cambridge demonstrated that a specific formulation could actually sequester up to 16 kilograms of CO₂ for every ton of concrete produced. Their study showed that this method has real legs for industrial application.
+
+And if you think this is just a pipe dream, the market speaks volumes. Industry research suggests the carbon-negative concrete market is projected to reach a whopping $10.7 billion by 2027. Why? Because companies across various sectors are increasingly adopting sustainable practices. 
+
+But let’s not get ahead of ourselves; while the benefits are exhilarating, the path forward isn’t without its challenges. There are technical hurdles that we need to overcome. For instance, the variations in compositions of alternative materials can lead to inconsistencies in the final product. We need more research and standard practices to ensure that carbon-negative concrete is reliable in performance and durability. 
+
+Moreover, the construction industry tends to be conservative, often sticking with tried-and-true methods. Convincing stakeholders—developers, architects, and contractors—to embrace these cutting-edge solutions requires a strong case for both environmental and economic benefits. 
+
+To truly make an impact, we also need to scale up production and invest in supply chains for these alternative materials. With significant investment and education, we can train engineers and construction professionals to seamlessly integrate carbon-negative concrete into their projects. 
+
+So, what’s currently being done? Leading companies in the construction sector are beginning to roll out products that utilize carbon-capturing technologies. For instance, CarbonCure Technologies has developed a method to inject CO₂ into fresh concrete, achieving carbon sequestration without altering the concrete’s properties. 
+
+Globally, initiatives like the Global Cement and Concrete Association are promoting guidelines and sharing knowledge on how to achieve net-zero emissions within the industry. It’s clear that the conversation around carbon-negative concrete is gaining momentum, underpinned by research and development investments that strive to make this a viable mainstream option.
+
+As we look ahead, it’s thrilling to think of the possibilities. Imagine a world where our buildings and roads actively contribute to reversing climate change, rather than exacerbating it. Carbon-negative concrete represents a transformative step toward a low-carbon future—one that not only meets the demands of our immediate environment but also secures the health of our planet for generations to come.
+
+To wrap up, carbon-negative concrete isn’t just about mitigating our current challenges; it’s about envisioning a brighter, more sustainable future in construction and urban development. By working collaboratively—through research, policy advocacy, and industry innovation—we can pave the way for a new era in construction that embodies resilience, sustainability, and hope. 
+
+So here’s to innovation—because when it comes to saving our planet, every little bit counts. Let’s stand at the forefront of this change and embrace a future where our built environment is not just a backdrop to our lives, but a partner in cultivating a healthier world.</description><pubDate>Wed, 16 Jul 2025 07:22:15 +0000</pubDate><enclosure url="https://freddieb123.github.io/learningpod/episodes/2025-07-15.mp3" length="1762029" type="audio/mpeg" /><guid isPermaLink="false">pod-2025-07-15</guid></item><item><title>2025-07-14 — Bias in generative models &amp; fairness metrics</title><description>**Title: Understanding Bias and Fairness in Generative AI**
 
 Hey there, welcome back to the show! Today, we’re diving into an increasingly pressing issue in our digital world—bias in artificial intelligence, specifically in generative models. As AI continues to weave its way into countless aspects of our lives—from the social media algorithms that dictate what we see, to the job recruitment tools that might filter out qualified candidates based on skewed data—understanding how biases manifest in these systems is more crucial than ever.
 
